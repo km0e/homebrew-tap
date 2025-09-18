@@ -1,19 +1,19 @@
 class Dv4lua < Formula
   desc "a lua-based command line tool that provides abstract user (device) interoperability"
-  homepage "https://blog.101248.xyz/zh/dv4lua/"
-  version "0.1.6"
+  homepage "https://blog.101248.xyz/dv4lua/"
+  version "0.1.7"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/km0e/dv4lua/releases/download/v0.1.6/dv4lua-aarch64-apple-darwin.tar.xz"
-    sha256 "094ae8e05d28536afed82f1d66d78a6b90e3a75f450b97439a6fb3f8af967907"
+    url "https://github.com/km0e/dv4lua/releases/download/v0.1.7/dv4lua-aarch64-apple-darwin.tar.xz"
+    sha256 "db3ce1b2b76d626c45eb96a77bde6171bc1e57e8f2ca9e75e7c199b7b377221a"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/km0e/dv4lua/releases/download/v0.1.6/dv4lua-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e6424fbf8b01bb6b08661c5eada85555dd60420a2652c041a5b05ad3bf44dd19"
+      url "https://github.com/km0e/dv4lua/releases/download/v0.1.7/dv4lua-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "786246e58e02ae8872a29b17e6b664c753c44d74c6b95bab329ac27448c3fe25"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/km0e/dv4lua/releases/download/v0.1.6/dv4lua-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9c4b28d67fbbb7de3f2ff8ab2cb71c464409b9a683d3fa289a4ad1a6d092ef44"
+      url "https://github.com/km0e/dv4lua/releases/download/v0.1.7/dv4lua-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "cb695e35b0107e88202770c926617ca693be2bec16ca2ee1695fd5bfb025287d"
     end
   end
 
